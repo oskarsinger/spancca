@@ -132,6 +132,7 @@ def cca(A, rank, T, u_project, v_project, verbose=True):
         print('Input: \t', end="")
         print('A: %d x %d' % (A.shape[0], A.shape[1]))
         print('\tApproximation rank (r): %d' % rank)
+        print 'S', S
         print('\tSing. values: s(1)=%f, s(2)=%f, ..., s(r)=%f' % (
             tuple(S[[0, 1, rank-1]].flatten())))
         print('Output:\t', end="")
